@@ -1,0 +1,2500 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "SansAmp GT-2"
+Date ""
+Rev "1.0"
+Comp "Vitalii Bobrov"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR03
+U 1 1 60930C43
+P 1250 7350
+F 0 "#PWR03" H 1250 7100 50  0001 C CNN
+F 1 "GND" H 1255 7177 50  0000 C CNN
+F 2 "" H 1250 7350 50  0001 C CNN
+F 3 "" H 1250 7350 50  0001 C CNN
+	1    1250 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5817 D4
+U 1 1 60931237
+P 1450 6500
+F 0 "D4" H 1450 6283 50  0000 C CNN
+F 1 "1N5817" H 1450 6374 50  0000 C CNN
+F 2 "diodes:DO41-3" H 1450 6325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 1450 6500 50  0001 C CNN
+	1    1450 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R36
+U 1 1 609329CD
+P 1900 6500
+F 0 "R36" V 1704 6500 50  0000 C CNN
+F 1 "39R" V 1795 6500 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 1900 6500 50  0001 C CNN
+F 3 "~" H 1900 6500 50  0001 C CNN
+	1    1900 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP_Small C33
+U 1 1 60932EF8
+P 2200 6850
+F 0 "C33" H 2288 6896 50  0000 L CNN
+F 1 "220uF" H 2288 6805 50  0000 L CNN
+F 2 "caps-elec:0802" H 2200 6850 50  0001 C CNN
+F 3 "~" H 2200 6850 50  0001 C CNN
+	1    2200 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C35
+U 1 1 609346FA
+P 4850 7050
+F 0 "C35" H 4938 7096 50  0000 L CNN
+F 1 "220uF" H 4938 7005 50  0000 L CNN
+F 2 "caps-elec:0802" H 4850 7050 50  0001 C CNN
+F 3 "~" H 4850 7050 50  0001 C CNN
+	1    4850 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R40
+U 1 1 6093488A
+P 4300 6650
+F 0 "R40" H 4359 6696 50  0000 L CNN
+F 1 "10K" H 4359 6605 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 4300 6650 50  0001 C CNN
+F 3 "~" H 4300 6650 50  0001 C CNN
+	1    4300 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R42
+U 1 1 60935584
+P 4300 7050
+F 0 "R42" H 4359 7096 50  0000 L CNN
+F 1 "10K" H 4359 7005 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 4300 7050 50  0001 C CNN
+F 3 "~" H 4300 7050 50  0001 C CNN
+	1    4300 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 6500 1300 6500
+Wire Wire Line
+	1600 6500 1800 6500
+Wire Wire Line
+	2000 6500 2200 6500
+Wire Wire Line
+	4300 6500 4300 6550
+Wire Wire Line
+	4300 6750 4300 6850
+Wire Wire Line
+	4300 6850 4850 6850
+Wire Wire Line
+	4850 6850 4850 6950
+Connection ~ 4300 6850
+Wire Wire Line
+	4300 6850 4300 6950
+Wire Wire Line
+	2200 6500 2200 6750
+Wire Wire Line
+	4850 7150 4850 7200
+Wire Wire Line
+	4850 7200 4300 7200
+Wire Wire Line
+	4300 7200 4300 7150
+Wire Wire Line
+	2200 7200 2200 6950
+Connection ~ 4300 7200
+Wire Wire Line
+	1150 7200 1250 7200
+Wire Wire Line
+	1250 7200 1250 7350
+Wire Wire Line
+	2200 7200 1250 7200
+Connection ~ 1250 7200
+Connection ~ 2200 6500
+Wire Wire Line
+	2200 7200 2650 7200
+Connection ~ 2200 7200
+Text GLabel 4300 6350 1    50   Input ~ 0
+9V
+Text GLabel 4850 6700 1    50   Input ~ 0
+VB
+Wire Wire Line
+	4850 6700 4850 6850
+Connection ~ 4850 6850
+Wire Wire Line
+	4300 6350 4300 6500
+Connection ~ 4300 6500
+Wire Wire Line
+	2650 7150 2650 7200
+Connection ~ 2650 7200
+Wire Wire Line
+	2650 7200 2950 7200
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 609649D9
+P 750 4400
+F 0 "H1" V 987 4403 50  0001 C CNN
+F 1 "IN" V 900 4450 50  0000 C CNN
+F 2 "supply_pins:PAD1" H 750 4400 50  0001 C CNN
+F 3 "~" H 750 4400 50  0001 C CNN
+	1    750  4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 60965162
+P 750 4800
+F 0 "H2" V 987 4803 50  0001 C CNN
+F 1 "GND" V 900 4850 50  0000 C CNN
+F 2 "supply_pins:PAD1" H 750 4800 50  0001 C CNN
+F 3 "~" H 750 4800 50  0001 C CNN
+	1    750  4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 60965671
+P 950 4950
+F 0 "#PWR01" H 950 4700 50  0001 C CNN
+F 1 "GND" H 955 4777 50  0000 C CNN
+F 2 "" H 950 4950 50  0001 C CNN
+F 3 "" H 950 4950 50  0001 C CNN
+	1    950  4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R25
+U 1 1 60965D64
+P 950 4550
+F 0 "R25" H 1009 4596 50  0000 L CNN
+F 1 "1M" H 1009 4505 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 950 4550 50  0001 C CNN
+F 3 "~" H 950 4550 50  0001 C CNN
+	1    950  4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2134 U1
+U 3 1 6095B9B0
+P 2750 6850
+F 0 "U1" V 2850 6750 50  0000 L CNN
+F 1 "OPA2134" V 2750 6700 50  0000 L CNN
+F 2 "integrated_circuits:DIP08" H 2750 6850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2750 6850 50  0001 C CNN
+	3    2750 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2134 U1
+U 1 1 6093FE97
+P 2800 3300
+F 0 "U1" H 2800 2933 50  0000 C CNN
+F 1 "OPA2134" H 2800 3024 50  0000 C CNN
+F 2 "integrated_circuits:DIP08" H 2800 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 2800 3300 50  0001 C CNN
+	1    2800 3300
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2134 U1
+U 2 1 60954FB6
+P 2800 4300
+F 0 "U1" H 2800 3933 50  0000 C CNN
+F 1 "OPA2134" H 2800 4024 50  0000 C CNN
+F 2 "integrated_circuits:DIP08" H 2800 4300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 2800 4300 50  0001 C CNN
+	2    2800 4300
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C18
+U 1 1 60966F12
+P 1200 4400
+F 0 "C18" V 971 4400 50  0000 C CNN
+F 1 "22nF" V 1062 4400 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 1200 4400 50  0001 C CNN
+F 3 "~" H 1200 4400 50  0001 C CNN
+	1    1200 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R24
+U 1 1 60967C32
+P 1550 4400
+F 0 "R24" V 1354 4400 50  0000 C CNN
+F 1 "10K" V 1445 4400 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 1550 4400 50  0001 C CNN
+F 3 "~" H 1550 4400 50  0001 C CNN
+	1    1550 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R20
+U 1 1 60968AB6
+P 1850 4200
+F 0 "R20" H 1909 4246 50  0000 L CNN
+F 1 "1M" H 1909 4155 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 1850 4200 50  0001 C CNN
+F 3 "~" H 1850 4200 50  0001 C CNN
+	1    1850 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1850 4000 1    50   Input ~ 0
+VB
+Wire Wire Line
+	850  4400 950  4400
+Wire Wire Line
+	1300 4400 1450 4400
+Wire Wire Line
+	1650 4400 1850 4400
+Wire Wire Line
+	1850 4000 1850 4100
+Wire Wire Line
+	1850 4300 1850 4400
+Connection ~ 1850 4400
+Wire Wire Line
+	950  4450 950  4400
+Connection ~ 950  4400
+Wire Wire Line
+	950  4400 1100 4400
+Wire Wire Line
+	950  4650 950  4800
+Wire Wire Line
+	850  4800 950  4800
+Connection ~ 950  4800
+Wire Wire Line
+	950  4800 950  4950
+Wire Wire Line
+	3100 4300 3200 4300
+Wire Wire Line
+	3200 4300 3200 3850
+Wire Wire Line
+	3200 3850 2400 3850
+Wire Wire Line
+	2400 3850 2400 4200
+Wire Wire Line
+	2400 4200 2500 4200
+$Comp
+L Device:C_Small C15
+U 1 1 6096DC59
+P 3450 4300
+F 0 "C15" V 3221 4300 50  0000 C CNN
+F 1 "22nF" V 3312 4300 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 3450 4300 50  0001 C CNN
+F 3 "~" H 3450 4300 50  0001 C CNN
+	1    3450 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 6096E8F7
+P 3850 4300
+F 0 "C16" V 3621 4300 50  0000 C CNN
+F 1 "22nF" V 3712 4300 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 3850 4300 50  0001 C CNN
+F 3 "~" H 3850 4300 50  0001 C CNN
+	1    3850 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 6096F3E0
+P 4250 4300
+F 0 "C17" V 4021 4300 50  0000 C CNN
+F 1 "22nF" V 4112 4300 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 4250 4300 50  0001 C CNN
+F 3 "~" H 4250 4300 50  0001 C CNN
+	1    4250 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R18
+U 1 1 6097074E
+P 3650 3900
+F 0 "R18" H 3709 3946 50  0000 L CNN
+F 1 "2K2" H 3709 3855 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 3650 3900 50  0001 C CNN
+F 3 "~" H 3650 3900 50  0001 C CNN
+	1    3650 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 3700 1    50   Input ~ 0
+VB
+Wire Wire Line
+	3650 3700 3650 3800
+$Comp
+L Device:R_Small R19
+U 1 1 6097151B
+P 4050 3900
+F 0 "R19" H 4109 3946 50  0000 L CNN
+F 1 "22K" H 4109 3855 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 4050 3900 50  0001 C CNN
+F 3 "~" H 4050 3900 50  0001 C CNN
+	1    4050 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 4050 3700 1    50   Input ~ 0
+VB
+Wire Wire Line
+	4050 3700 4050 3800
+$Comp
+L Device:R_Small R26
+U 1 1 6097210A
+P 3850 4650
+F 0 "R26" V 3654 4650 50  0000 C CNN
+F 1 "100K" V 3745 4650 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 3850 4650 50  0001 C CNN
+F 3 "~" H 3850 4650 50  0001 C CNN
+	1    3850 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 3400 2400 3400
+Wire Wire Line
+	2400 3400 2400 3850
+Connection ~ 2400 3850
+$Comp
+L Device:C_Small C13
+U 1 1 60973EB6
+P 4500 3900
+F 0 "C13" H 4592 3946 50  0000 L CNN
+F 1 "22nF" H 4592 3855 50  0000 L CNN
+F 2 "caps-film:0.2_22.SML" H 4500 3900 50  0001 C CNN
+F 3 "~" H 4500 3900 50  0001 C CNN
+	1    4500 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4300 3350 4300
+Connection ~ 3200 4300
+Wire Wire Line
+	3550 4300 3650 4300
+Wire Wire Line
+	3950 4300 4050 4300
+Wire Wire Line
+	3200 4300 3200 4650
+Wire Wire Line
+	3200 4650 3750 4650
+Wire Wire Line
+	3950 4650 4500 4650
+Wire Wire Line
+	4500 4650 4500 4300
+Wire Wire Line
+	4350 4300 4500 4300
+Connection ~ 4500 4300
+Wire Wire Line
+	4500 4300 4500 4000
+Wire Wire Line
+	4050 4000 4050 4300
+Connection ~ 4050 4300
+Wire Wire Line
+	4050 4300 4150 4300
+Wire Wire Line
+	3650 4000 3650 4300
+Connection ~ 3650 4300
+Wire Wire Line
+	3650 4300 3750 4300
+$Comp
+L Device:C_Small C11
+U 1 1 6097C4DC
+P 1850 3200
+F 0 "C11" V 1621 3200 50  0000 C CNN
+F 1 "10nF" V 1712 3200 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 1850 3200 50  0001 C CNN
+F 3 "~" H 1850 3200 50  0001 C CNN
+	1    1850 3200
+	0    1    1    0   
+$EndComp
+Text GLabel 1500 3200 0    50   Input ~ 0
+VB
+$Comp
+L Device:R_Small R17
+U 1 1 6097D728
+P 2250 3200
+F 0 "R17" V 2054 3200 50  0000 C CNN
+F 1 "22K" V 2145 3200 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 2250 3200 50  0001 C CNN
+F 3 "~" H 2250 3200 50  0001 C CNN
+	1    2250 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 6097F4E8
+P 2800 2800
+F 0 "R15" V 2604 2800 50  0000 C CNN
+F 1 "100K" V 2695 2800 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 2800 2800 50  0001 C CNN
+F 3 "~" H 2800 2800 50  0001 C CNN
+	1    2800 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 3200 1750 3200
+Wire Wire Line
+	1950 3200 2150 3200
+Wire Wire Line
+	2350 3200 2450 3200
+Wire Wire Line
+	2450 3200 2450 2800
+Wire Wire Line
+	2450 2800 2700 2800
+Connection ~ 2450 3200
+Wire Wire Line
+	2450 3200 2500 3200
+Wire Wire Line
+	2900 2800 3100 2800
+Wire Wire Line
+	3100 2800 3100 3300
+$Comp
+L Device:C_Small C8
+U 1 1 609868BB
+P 3650 2900
+F 0 "C8" V 3421 2900 50  0000 C CNN
+F 1 "10nF" V 3512 2900 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 3650 2900 50  0001 C CNN
+F 3 "~" H 3650 2900 50  0001 C CNN
+	1    3650 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 609877FE
+P 3650 3300
+F 0 "C12" V 3421 3300 50  0000 C CNN
+F 1 "2.2nF" V 3512 3300 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 3650 3300 50  0001 C CNN
+F 3 "~" H 3650 3300 50  0001 C CNN
+	1    3650 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 3300 3350 3300
+Connection ~ 3100 3300
+Wire Wire Line
+	3550 2900 3350 2900
+Wire Wire Line
+	3350 2900 3350 3300
+Connection ~ 3350 3300
+Wire Wire Line
+	3350 3300 3550 3300
+Text GLabel 5700 3300 0    50   Input ~ 0
+SW_AMP_A
+Text GLabel 4600 2900 2    50   Input ~ 0
+SW_AMP_A_CALI
+Text GLabel 4600 3300 2    50   Input ~ 0
+SW_AMP_A_BRIT
+Text GLabel 4600 3650 2    50   Input ~ 0
+SW_AMP_A_TWEED
+Wire Wire Line
+	3750 2900 4600 2900
+Wire Wire Line
+	3750 3300 4600 3300
+Wire Wire Line
+	4500 3650 4500 3800
+$Comp
+L Device:R_POT RV1
+U 1 1 609E1626
+P 5900 3700
+F 0 "RV1" H 5831 3746 50  0001 R CNN
+F 1 "GAIN B100K" H 5830 3700 50  0000 R CNN
+F 2 "potentiometers:16MM_B.MOUNT" H 5900 3700 50  0001 C CNN
+F 3 "~" H 5900 3700 50  0001 C CNN
+	1    5900 3700
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R21
+U 1 1 609E2CAD
+P 5900 4200
+F 0 "R21" H 5959 4246 50  0000 L CNN
+F 1 "3K3" H 5959 4155 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 5900 4200 50  0001 C CNN
+F 3 "~" H 5900 4200 50  0001 C CNN
+	1    5900 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5900 4550 3    50   Input ~ 0
+VB
+Wire Wire Line
+	5900 4550 5900 4300
+Wire Wire Line
+	5700 3300 5900 3300
+Wire Wire Line
+	5900 3300 5900 3550
+Wire Wire Line
+	5900 3850 5900 4100
+Text GLabel 5700 2000 0    50   Input ~ 0
+SW_AMP_B
+Text GLabel 4600 2000 2    50   Input ~ 0
+SW_AMP_B_BRIT
+Text GLabel 4600 2350 2    50   Input ~ 0
+SW_AMP_B_AC
+$Comp
+L Amplifier_Operational:TL072 U2
+U 1 1 609EB52E
+P 6700 3600
+F 0 "U2" H 6700 3233 50  0000 C CNN
+F 1 "TLC2272" H 6700 3324 50  0000 C CNN
+F 2 "integrated_circuits:DIP08" H 6700 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 6700 3600 50  0001 C CNN
+	1    6700 3600
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U2
+U 2 1 609F01C8
+P 7700 2600
+F 0 "U2" H 7700 2233 50  0000 C CNN
+F 1 "TLC2272" H 7700 2324 50  0000 C CNN
+F 2 "integrated_circuits:DIP08" H 7700 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 7700 2600 50  0001 C CNN
+	2    7700 2600
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U2
+U 3 1 609F3F08
+P 3050 6850
+F 0 "U2" V 3150 6750 50  0000 L CNN
+F 1 "TLC2272" V 3050 6650 50  0000 L CNN
+F 2 "integrated_circuits:DIP08" H 3050 6850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3050 6850 50  0001 C CNN
+	3    3050 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6550 2950 6500
+Connection ~ 2950 6500
+Wire Wire Line
+	2950 6500 3300 6500
+Wire Wire Line
+	2950 7150 2950 7200
+Connection ~ 2950 7200
+Wire Wire Line
+	2950 7200 3300 7200
+$Comp
+L Device:R_Small R6
+U 1 1 60A00396
+P 4250 2000
+F 0 "R6" V 4054 2000 50  0000 C CNN
+F 1 "22K" V 4145 2000 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 4250 2000 50  0001 C CNN
+F 3 "~" H 4250 2000 50  0001 C CNN
+	1    4250 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 60A02667
+P 5750 2200
+F 0 "R7" H 5809 2246 50  0000 L CNN
+F 1 "22K" H 5809 2155 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 5750 2200 50  0001 C CNN
+F 3 "~" H 5750 2200 50  0001 C CNN
+	1    5750 2200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 2000 0    50   Input ~ 0
+VB
+Wire Wire Line
+	3900 2000 4150 2000
+Wire Wire Line
+	4350 2000 4450 2000
+Wire Wire Line
+	4450 2000 4450 2350
+Wire Wire Line
+	4450 2350 4600 2350
+Connection ~ 4450 2000
+Wire Wire Line
+	4450 2000 4600 2000
+Wire Wire Line
+	5700 2000 5750 2000
+Wire Wire Line
+	5750 2000 5750 2100
+Text GLabel 5750 2550 3    50   Input ~ 0
+VB
+Wire Wire Line
+	5750 2550 5750 2300
+$Comp
+L Device:R_Small R16
+U 1 1 60A141FF
+P 6700 3100
+F 0 "R16" V 6504 3100 50  0000 C CNN
+F 1 "330K" V 6595 3100 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 6700 3100 50  0001 C CNN
+F 3 "~" H 6700 3100 50  0001 C CNN
+	1    6700 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 60A1729C
+P 6700 2750
+F 0 "C7" V 6471 2750 50  0000 C CNN
+F 1 "220pF" V 6562 2750 50  0000 C CNN
+F 2 "caps-film:0.2_22.MED" H 6700 2750 50  0001 C CNN
+F 3 "~" H 6700 2750 50  0001 C CNN
+	1    6700 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 60A186F5
+P 6150 2750
+F 0 "C6" V 5921 2750 50  0000 C CNN
+F 1 "22nF" V 6012 2750 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 6150 2750 50  0001 C CNN
+F 3 "~" H 6150 2750 50  0001 C CNN
+	1    6150 2750
+	0    1    1    0   
+$EndComp
+Connection ~ 5750 2000
+Wire Wire Line
+	6000 2000 6000 2750
+Wire Wire Line
+	6000 2750 6050 2750
+Wire Wire Line
+	5750 2000 6000 2000
+Wire Wire Line
+	6050 3700 6400 3700
+Wire Wire Line
+	6600 3100 6300 3100
+Wire Wire Line
+	6300 3100 6300 3500
+Wire Wire Line
+	6300 3500 6400 3500
+Wire Wire Line
+	6800 3100 7100 3100
+Wire Wire Line
+	7100 3100 7100 3600
+Wire Wire Line
+	7100 3600 7000 3600
+Wire Wire Line
+	6800 2750 7100 2750
+Wire Wire Line
+	7100 2750 7100 3100
+Connection ~ 7100 3100
+Wire Wire Line
+	6600 2750 6300 2750
+Wire Wire Line
+	6300 2750 6300 3100
+Connection ~ 6300 2750
+Wire Wire Line
+	6300 2750 6250 2750
+Connection ~ 6300 3100
+Text GLabel 5700 1050 0    50   Input ~ 0
+SW_MOD_A
+Text GLabel 4600 650  2    50   Input ~ 0
+SW_MOD_A_HOT
+Text GLabel 4600 1050 2    50   Input ~ 0
+SW_MOD_A_HI
+$Comp
+L Device:R_Small R1
+U 1 1 5F8FB197
+P 4250 1050
+F 0 "R1" V 4054 1050 50  0000 C CNN
+F 1 "1K" V 4145 1050 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 4250 1050 50  0001 C CNN
+F 3 "~" H 4250 1050 50  0001 C CNN
+	1    4250 1050
+	0    1    1    0   
+$EndComp
+Text GLabel 3900 1050 0    50   Input ~ 0
+VB
+Wire Wire Line
+	3900 1050 4050 1050
+$Comp
+L Device:R_Small R3
+U 1 1 5F901019
+P 5950 1200
+F 0 "R3" H 6009 1246 50  0000 L CNN
+F 1 "22K" H 6009 1155 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 5950 1200 50  0001 C CNN
+F 3 "~" H 5950 1200 50  0001 C CNN
+	1    5950 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5950 1550 3    50   Input ~ 0
+VB
+Wire Wire Line
+	5950 1550 5950 1300
+$Comp
+L Device:CP_Small C1
+U 1 1 5F903FC6
+P 6300 1050
+F 0 "C1" V 6075 1050 50  0000 C CNN
+F 1 "2.2uF" V 6166 1050 50  0000 C CNN
+F 2 "caps-elec:0502" H 6300 1050 50  0001 C CNN
+F 3 "~" H 6300 1050 50  0001 C CNN
+	1    6300 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5F904E6C
+P 6750 1050
+F 0 "R2" V 6554 1050 50  0000 C CNN
+F 1 "1K" V 6645 1050 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 6750 1050 50  0001 C CNN
+F 3 "~" H 6750 1050 50  0001 C CNN
+	1    6750 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5F905F57
+P 7650 1050
+F 0 "C2" V 7421 1050 50  0000 C CNN
+F 1 "220pF" V 7512 1050 50  0000 C CNN
+F 2 "caps-film:0.2_22.MED" H 7650 1050 50  0001 C CNN
+F 3 "~" H 7650 1050 50  0001 C CNN
+	1    7650 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5F90744D
+P 7700 1850
+F 0 "R5" V 7504 1850 50  0000 C CNN
+F 1 "330K" V 7595 1850 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 7700 1850 50  0001 C CNN
+F 3 "~" H 7700 1850 50  0001 C CNN
+	1    7700 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 1050 4450 1050
+Wire Wire Line
+	4450 1050 4450 650 
+Wire Wire Line
+	4450 650  4600 650 
+Connection ~ 4450 1050
+Wire Wire Line
+	4450 1050 4600 1050
+Wire Wire Line
+	5700 1050 5950 1050
+Wire Wire Line
+	5950 1100 5950 1050
+Connection ~ 5950 1050
+Wire Wire Line
+	5950 1050 6200 1050
+Wire Wire Line
+	6400 1050 6650 1050
+Wire Wire Line
+	6850 1050 7250 1050
+Wire Wire Line
+	7750 1050 8100 1050
+Wire Wire Line
+	8100 1050 8100 1850
+Wire Wire Line
+	8100 2600 8000 2600
+Wire Wire Line
+	7100 2750 7100 2700
+Wire Wire Line
+	7100 2700 7400 2700
+Connection ~ 7100 2750
+Wire Wire Line
+	7400 2500 7250 2500
+Wire Wire Line
+	7250 2500 7250 1850
+Connection ~ 7250 1050
+Wire Wire Line
+	7250 1050 7550 1050
+Wire Wire Line
+	7250 1850 7600 1850
+Connection ~ 7250 1850
+Wire Wire Line
+	7250 1850 7250 1050
+Wire Wire Line
+	7800 1850 8100 1850
+Connection ~ 8100 1850
+Wire Wire Line
+	8100 1850 8100 2600
+$Comp
+L Device:R_Small R12
+U 1 1 5F92EF50
+P 8500 2600
+F 0 "R12" V 8304 2600 50  0000 C CNN
+F 1 "10K" V 8395 2600 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 8500 2600 50  0001 C CNN
+F 3 "~" H 8500 2600 50  0001 C CNN
+	1    8500 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 5F92FB0A
+P 8800 2200
+F 0 "R8" H 8859 2246 50  0000 L CNN
+F 1 "22K" H 8859 2155 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 8800 2200 50  0001 C CNN
+F 3 "~" H 8800 2200 50  0001 C CNN
+	1    8800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 5F930521
+P 9050 2600
+F 0 "R13" V 8854 2600 50  0000 C CNN
+F 1 "22K" V 8945 2600 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 9050 2600 50  0001 C CNN
+F 3 "~" H 9050 2600 50  0001 C CNN
+	1    9050 2600
+	0    1    1    0   
+$EndComp
+Text GLabel 8800 2000 1    50   Input ~ 0
+VB
+Wire Wire Line
+	8800 2000 8800 2100
+$Comp
+L Amplifier_Operational:TL072 U3
+U 1 1 5F9363F8
+P 10250 2500
+F 0 "U3" H 10250 2133 50  0000 C CNN
+F 1 "TLC2272" H 10250 2224 50  0000 C CNN
+F 2 "integrated_circuits:DIP08" H 10250 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 10250 2500 50  0001 C CNN
+	1    10250 2500
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U3
+U 2 1 5F939D86
+P 12300 2400
+F 0 "U3" H 12300 2033 50  0000 C CNN
+F 1 "TLC2272" H 12300 2124 50  0000 C CNN
+F 2 "integrated_circuits:DIP08" H 12300 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 12300 2400 50  0001 C CNN
+	2    12300 2400
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U3
+U 3 1 5F93F3E8
+P 3400 6850
+F 0 "U3" V 3500 6800 50  0000 L CNN
+F 1 "TLC2272" V 3400 6700 50  0000 L CNN
+F 2 "integrated_circuits:DIP08" H 3400 6850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3400 6850 50  0001 C CNN
+	3    3400 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6550 3300 6500
+Connection ~ 3300 6500
+Wire Wire Line
+	3300 7150 3300 7200
+Connection ~ 3300 7200
+$Comp
+L Device:R_Small R9
+U 1 1 5F950339
+P 9350 2200
+F 0 "R9" H 9409 2246 50  0000 L CNN
+F 1 "10K" H 9409 2155 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 9350 2200 50  0001 C CNN
+F 3 "~" H 9350 2200 50  0001 C CNN
+	1    9350 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5F9511C4
+P 9350 1850
+F 0 "C3" H 9442 1896 50  0000 L CNN
+F 1 "47nF" H 9442 1805 50  0000 L CNN
+F 2 "caps-film:0.2_22.SML" H 9350 1850 50  0001 C CNN
+F 3 "~" H 9350 1850 50  0001 C CNN
+	1    9350 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 9350 1650 1    50   Input ~ 0
+VB
+Wire Wire Line
+	9350 1650 9350 1750
+$Comp
+L Device:C_Small C5
+U 1 1 5F95A9DD
+P 9700 2350
+F 0 "C5" V 9471 2350 50  0000 C CNN
+F 1 "10nF" V 9562 2350 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 9700 2350 50  0001 C CNN
+F 3 "~" H 9700 2350 50  0001 C CNN
+	1    9700 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R14
+U 1 1 5F960056
+P 9650 2600
+F 0 "R14" V 9850 2600 50  0000 C CNN
+F 1 "22K" V 9750 2600 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 9650 2600 50  0001 C CNN
+F 3 "~" H 9650 2600 50  0001 C CNN
+	1    9650 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5F96104A
+P 9850 3050
+F 0 "C10" H 9758 3004 50  0000 R CNN
+F 1 "560pF" H 9758 3095 50  0000 R CNN
+F 2 "caps-film:0.2_22.MED" H 9850 3050 50  0001 C CNN
+F 3 "~" H 9850 3050 50  0001 C CNN
+	1    9850 3050
+	-1   0    0    1   
+$EndComp
+Text GLabel 9850 3400 3    50   Input ~ 0
+VB
+Wire Wire Line
+	9850 3400 9850 3150
+Wire Wire Line
+	8100 2600 8400 2600
+Connection ~ 8100 2600
+Wire Wire Line
+	8600 2600 8800 2600
+Wire Wire Line
+	9150 2600 9350 2600
+Wire Wire Line
+	9850 2600 9950 2600
+Wire Wire Line
+	9350 1950 9350 2100
+Wire Wire Line
+	9350 2300 9350 2350
+Connection ~ 9350 2600
+Wire Wire Line
+	9350 2600 9550 2600
+Wire Wire Line
+	8800 2300 8800 2600
+Connection ~ 8800 2600
+Wire Wire Line
+	8800 2600 8950 2600
+Wire Wire Line
+	9800 2350 9950 2350
+Wire Wire Line
+	9950 2350 9950 2400
+Wire Wire Line
+	9600 2350 9350 2350
+Connection ~ 9350 2350
+Wire Wire Line
+	9350 2350 9350 2600
+Wire Wire Line
+	9850 2950 9850 2600
+Wire Wire Line
+	9950 2350 9950 2000
+Wire Wire Line
+	9950 2000 10650 2000
+Wire Wire Line
+	10650 2000 10650 2500
+Wire Wire Line
+	10650 2500 10550 2500
+Connection ~ 9950 2350
+$Comp
+L Device:R_Small R10
+U 1 1 5F9A148F
+P 10950 2500
+F 0 "R10" V 10754 2500 50  0000 C CNN
+F 1 "33K" V 10845 2500 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 10950 2500 50  0001 C CNN
+F 3 "~" H 10950 2500 50  0001 C CNN
+	1    10950 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5F9A2851
+P 11650 2300
+F 0 "C4" V 11421 2300 50  0000 C CNN
+F 1 "2.2nF" V 11512 2300 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 11650 2300 50  0001 C CNN
+F 3 "~" H 11650 2300 50  0001 C CNN
+	1    11650 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11550 2300 11350 2300
+$Comp
+L Device:R_Small R11
+U 1 1 5F9B1B29
+P 11650 2500
+F 0 "R11" V 11850 2500 50  0000 C CNN
+F 1 "33K" V 11750 2500 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 11650 2500 50  0001 C CNN
+F 3 "~" H 11650 2500 50  0001 C CNN
+	1    11650 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5F9B1B2F
+P 11900 2950
+F 0 "C9" H 11808 2904 50  0000 R CNN
+F 1 "1nF" H 11808 2995 50  0000 R CNN
+F 2 "caps-film:0.2_22.SML" H 11900 2950 50  0001 C CNN
+F 3 "~" H 11900 2950 50  0001 C CNN
+	1    11900 2950
+	-1   0    0    1   
+$EndComp
+Text GLabel 11900 3300 3    50   Input ~ 0
+VB
+Wire Wire Line
+	11900 3300 11900 3050
+Wire Wire Line
+	11900 2500 12000 2500
+Wire Wire Line
+	11900 2850 11900 2500
+Wire Wire Line
+	10650 2500 10850 2500
+Connection ~ 10650 2500
+Wire Wire Line
+	9750 2600 9850 2600
+Connection ~ 9850 2600
+Wire Wire Line
+	11050 2500 11350 2500
+Wire Wire Line
+	11750 2500 11900 2500
+Connection ~ 11900 2500
+Wire Wire Line
+	11750 2300 11900 2300
+Wire Wire Line
+	11350 2300 11350 2500
+Connection ~ 11350 2500
+Wire Wire Line
+	11350 2500 11550 2500
+Wire Wire Line
+	11900 2300 11900 1900
+Wire Wire Line
+	11900 1900 12700 1900
+Wire Wire Line
+	12700 1900 12700 2400
+Wire Wire Line
+	12700 2400 12600 2400
+Connection ~ 11900 2300
+Wire Wire Line
+	11900 2300 12000 2300
+Wire Wire Line
+	4500 3650 4600 3650
+Connection ~ 12700 2400
+$Comp
+L Amplifier_Operational:TL064 U4
+U 5 1 5FB250B5
+P 3750 6850
+F 0 "U4" H 3708 6896 50  0000 L CNN
+F 1 "TL064" H 3708 6805 50  0000 L CNN
+F 2 "integrated_circuits:DIP14.1" H 3700 6950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 3800 7050 50  0001 C CNN
+	5    3750 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 5750 14350 5750
+Wire Wire Line
+	7000 5600 7000 6150
+Wire Wire Line
+	7350 5600 7000 5600
+Wire Wire Line
+	7550 5600 7850 5600
+Wire Wire Line
+	7000 6150 7150 6150
+Wire Wire Line
+	7850 6050 7750 6050
+Connection ~ 7850 6050
+Wire Wire Line
+	7850 6050 7850 5600
+Wire Wire Line
+	8000 6050 7850 6050
+Wire Wire Line
+	8400 6050 8200 6050
+Wire Wire Line
+	8750 6050 8600 6050
+Wire Wire Line
+	8000 6250 7750 6250
+Text GLabel 8000 6250 2    50   Input ~ 0
+VB
+$Comp
+L Amplifier_Operational:TL064 U4
+U 1 1 5FB21C07
+P 7450 6150
+F 0 "U4" H 7450 5783 50  0000 C CNN
+F 1 "TL064" H 7450 5874 50  0000 C CNN
+F 2 "integrated_circuits:DIP14.1" H 7400 6250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 7500 6350 50  0001 C CNN
+	1    7450 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R33
+U 1 1 5FB20C10
+P 8100 6050
+F 0 "R33" V 7904 6050 50  0000 C CNN
+F 1 "100K" V 7995 6050 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 8100 6050 50  0001 C CNN
+F 3 "~" H 8100 6050 50  0001 C CNN
+	1    8100 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C30
+U 1 1 5FB1FDF8
+P 8500 6050
+F 0 "C30" V 8271 6050 50  0000 C CNN
+F 1 "10nF" V 8362 6050 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 8500 6050 50  0001 C CNN
+F 3 "~" H 8500 6050 50  0001 C CNN
+	1    8500 6050
+	0    1    1    0   
+$EndComp
+Connection ~ 9150 5750
+Wire Wire Line
+	8900 5750 8900 5900
+Wire Wire Line
+	9150 5750 8900 5750
+Wire Wire Line
+	9150 5750 9350 5750
+Wire Wire Line
+	9150 7350 9150 5750
+Wire Wire Line
+	10850 7350 9150 7350
+Wire Wire Line
+	8900 6450 8900 6200
+Text GLabel 8900 6450 3    50   Input ~ 0
+VB
+$Comp
+L Device:R_POT RV4
+U 1 1 5FAF13C9
+P 8900 6050
+F 0 "RV4" H 8831 6096 50  0001 R CNN
+F 1 "MASTER A100K" H 8830 6050 50  0000 R CNN
+F 2 "potentiometers:16MM_B.MOUNT" H 8900 6050 50  0001 C CNN
+F 3 "~" H 8900 6050 50  0001 C CNN
+	1    8900 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10450 6150 10650 6150
+Wire Wire Line
+	10700 5750 10850 5750
+Connection ~ 10700 5750
+Wire Wire Line
+	10700 5400 10450 5400
+Wire Wire Line
+	10700 5750 10700 5400
+Wire Wire Line
+	10450 5750 10700 5750
+Wire Wire Line
+	11650 5350 11750 5350
+Connection ~ 11650 5350
+Wire Wire Line
+	12950 5150 12950 5750
+Wire Wire Line
+	11650 5150 12950 5150
+Wire Wire Line
+	11650 5350 11650 5150
+Wire Wire Line
+	11250 5350 11350 5350
+Wire Wire Line
+	11250 5750 11250 5350
+Wire Wire Line
+	11250 5750 11050 5750
+Connection ~ 11250 5750
+Wire Wire Line
+	11250 5750 11250 6150
+Wire Wire Line
+	11350 5750 11250 5750
+Wire Wire Line
+	11550 5750 11750 5750
+Wire Wire Line
+	11550 5350 11650 5350
+Wire Wire Line
+	12950 6600 12950 6850
+Connection ~ 12950 6600
+Wire Wire Line
+	11650 7350 11050 7350
+Wire Wire Line
+	11650 6600 11650 7350
+Wire Wire Line
+	12950 6600 11650 6600
+Wire Wire Line
+	12950 5750 13000 5750
+Connection ~ 12950 5750
+Wire Wire Line
+	12950 5750 12950 6600
+Wire Wire Line
+	12850 5750 12950 5750
+Wire Wire Line
+	12950 7300 12950 7050
+Text GLabel 12950 7300 3    50   Input ~ 0
+VB
+$Comp
+L Device:R_Small R41
+U 1 1 5FA6D640
+P 12950 6950
+F 0 "R41" H 13009 6996 50  0000 L CNN
+F 1 "22K" H 13009 6905 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 12950 6950 50  0001 C CNN
+F 3 "~" H 12950 6950 50  0001 C CNN
+	1    12950 6950
+	1    0    0    -1  
+$EndComp
+Connection ~ 14950 5750
+Wire Wire Line
+	14950 6150 14100 6150
+Wire Wire Line
+	14950 5750 14950 6150
+Connection ~ 14950 5400
+Wire Wire Line
+	14950 5750 14550 5750
+Wire Wire Line
+	14950 5400 14950 5750
+Wire Wire Line
+	14950 5400 14550 5400
+$Comp
+L Device:R_Small R45
+U 1 1 5FA545D5
+P 10950 7350
+F 0 "R45" V 10754 7350 50  0000 C CNN
+F 1 "22K" V 10845 7350 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 10950 7350 50  0001 C CNN
+F 3 "~" H 10950 7350 50  0001 C CNN
+	1    10950 7350
+	0    1    1    0   
+$EndComp
+Text GLabel 9350 5750 2    50   Input ~ 0
+SW_MIC_A
+Wire Wire Line
+	10650 6150 10650 6400
+Wire Wire Line
+	10650 6850 10650 6600
+Text GLabel 10650 6850 3    50   Input ~ 0
+VB
+$Comp
+L Device:R_Small R37
+U 1 1 5FA47440
+P 10650 6500
+F 0 "R37" H 10709 6546 50  0000 L CNN
+F 1 "22K" H 10709 6455 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 10650 6500 50  0001 C CNN
+F 3 "~" H 10650 6500 50  0001 C CNN
+	1    10650 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11250 6850 11250 6600
+Text GLabel 11250 6850 3    50   Input ~ 0
+VB
+$Comp
+L Device:R_Small R38
+U 1 1 5FA409EE
+P 11250 6500
+F 0 "R38" H 11309 6546 50  0000 L CNN
+F 1 "6K2" H 11309 6455 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 11250 6500 50  0001 C CNN
+F 3 "~" H 11250 6500 50  0001 C CNN
+	1    11250 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C28
+U 1 1 5FA3F84B
+P 10950 5750
+F 0 "C28" V 10721 5750 50  0000 C CNN
+F 1 "22nF" V 10812 5750 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 10950 5750 50  0001 C CNN
+F 3 "~" H 10950 5750 50  0001 C CNN
+	1    10950 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C29
+U 1 1 5FA3E9F0
+P 11450 5750
+F 0 "C29" V 11221 5750 50  0000 C CNN
+F 1 "4.7nF" V 11312 5750 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 11450 5750 50  0001 C CNN
+F 3 "~" H 11450 5750 50  0001 C CNN
+	1    11450 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C21
+U 1 1 5FA3D6B6
+P 11450 5350
+F 0 "C21" V 11221 5350 50  0000 C CNN
+F 1 "4.7nF" V 11312 5350 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 11450 5350 50  0001 C CNN
+F 3 "~" H 11450 5350 50  0001 C CNN
+	1    11450 5350
+	0    1    1    0   
+$EndComp
+Text GLabel 11750 5350 2    50   Input ~ 0
+SW_MIC_B_OFF_AXIS
+Text GLabel 12850 5750 0    50   Input ~ 0
+SW_MIC_B
+Text GLabel 14100 5400 0    50   Input ~ 0
+SW_MOD_B_HOT
+Text GLabel 14100 5750 0    50   Input ~ 0
+SW_MOD_B_HI
+Text GLabel 13000 5750 2    50   Input ~ 0
+SW_MOD_B
+$Comp
+L Device:R_Small R31
+U 1 1 5FA30366
+P 14450 5750
+F 0 "R31" V 14254 5750 50  0000 C CNN
+F 1 "10K" V 14345 5750 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 14450 5750 50  0001 C CNN
+F 3 "~" H 14450 5750 50  0001 C CNN
+	1    14450 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C22
+U 1 1 5FA2D8CF
+P 14450 5400
+F 0 "C22" V 14221 5400 50  0000 C CNN
+F 1 "10nF" V 14312 5400 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 14450 5400 50  0001 C CNN
+F 3 "~" H 14450 5400 50  0001 C CNN
+	1    14450 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12700 2400 14950 2400
+Wire Wire Line
+	14950 2400 14950 5400
+$Comp
+L Amplifier_Operational:TL064 U4
+U 2 1 5FC4D71F
+P 5800 6250
+F 0 "U4" H 5800 5883 50  0000 C CNN
+F 1 "TL064" H 5800 5974 50  0000 C CNN
+F 2 "integrated_circuits:DIP14.1" H 5750 6350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 5850 6450 50  0001 C CNN
+	2    5800 6250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R35
+U 1 1 5FC5ED4E
+P 7450 5600
+F 0 "R35" V 7254 5600 50  0000 C CNN
+F 1 "330K" V 7345 5600 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 7450 5600 50  0001 C CNN
+F 3 "~" H 7450 5600 50  0001 C CNN
+	1    7450 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 6150 6950 6150
+Connection ~ 7000 6150
+$Comp
+L Device:R_POT RV2
+U 1 1 5FC9341C
+P 5450 7050
+F 0 "RV2" V 5243 7050 50  0001 C CNN
+F 1 "MID C100K" V 5335 7050 50  0000 C CNN
+F 2 "potentiometers:16MM_B.MOUNT" H 5450 7050 50  0001 C CNN
+F 3 "~" H 5450 7050 50  0001 C CNN
+	1    5450 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 5FC94C61
+P 6850 6150
+F 0 "C14" V 6621 6150 50  0000 C CNN
+F 1 "100nF" V 6712 6150 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 6850 6150 50  0001 C CNN
+F 3 "~" H 6850 6150 50  0001 C CNN
+	1    6850 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R23
+U 1 1 5FC9750C
+P 6350 6150
+F 0 "R23" V 6154 6150 50  0000 C CNN
+F 1 "2K2" V 6245 6150 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 6350 6150 50  0001 C CNN
+F 3 "~" H 6350 6150 50  0001 C CNN
+	1    6350 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R48
+U 1 1 5FD424BA
+P 6950 7300
+F 0 "R48" H 6800 7250 50  0000 C CNN
+F 1 "10K" H 6800 7350 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 6950 7300 50  0001 C CNN
+F 3 "~" H 6950 7300 50  0001 C CNN
+	1    6950 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R43
+U 1 1 5FD44C20
+P 6150 7050
+F 0 "R43" V 5954 7050 50  0000 C CNN
+F 1 "2K2" V 6045 7050 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 6150 7050 50  0001 C CNN
+F 3 "~" H 6150 7050 50  0001 C CNN
+	1    6150 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R44
+U 1 1 5FD550D4
+P 7650 9300
+F 0 "R44" H 7500 9250 50  0000 C CNN
+F 1 "10K" H 7500 9350 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 7650 9300 50  0001 C CNN
+F 3 "~" H 7650 9300 50  0001 C CNN
+	1    7650 9300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C36
+U 1 1 5FD68A4E
+P 5600 9350
+F 0 "C36" H 5508 9304 50  0000 R CNN
+F 1 "22nF" H 5508 9395 50  0000 R CNN
+F 2 "caps-film:0.2_22.SML" H 5600 9350 50  0001 C CNN
+F 3 "~" H 5600 9350 50  0001 C CNN
+	1    5600 9350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C37
+U 1 1 5FD6B9C1
+P 7300 7300
+F 0 "C37" H 7100 7250 50  0000 C CNN
+F 1 "10n" H 7100 7350 50  0000 C CNN
+F 2 "caps-film:0.2_22.MED" H 7300 7300 50  0001 C CNN
+F 3 "~" H 7300 7300 50  0001 C CNN
+	1    7300 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R47
+U 1 1 5FD6D0AA
+P 6600 5700
+F 0 "R47" H 6450 5650 50  0000 C CNN
+F 1 "470k" H 6450 5750 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 6600 5700 50  0001 C CNN
+F 3 "~" H 6600 5700 50  0001 C CNN
+	1    6600 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R49
+U 1 1 5FF80CFA
+P 7950 8600
+F 0 "R49" V 7754 8600 50  0000 C CNN
+F 1 "1K" V 7845 8600 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 7950 8600 50  0001 C CNN
+F 3 "~" H 7950 8600 50  0001 C CNN
+	1    7950 8600
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:TL064 U4
+U 4 1 5FF81F2E
+P 8600 8700
+F 0 "U4" H 8600 9067 50  0000 C CNN
+F 1 "TL064" H 8600 8976 50  0000 C CNN
+F 2 "integrated_circuits:DIP14.1" H 8550 8800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 8650 8900 50  0001 C CNN
+	4    8600 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 8800 8150 9150
+Wire Wire Line
+	8150 9150 9000 9150
+Wire Wire Line
+	9000 9150 9000 8700
+Wire Wire Line
+	9000 8700 8900 8700
+Wire Wire Line
+	8150 8800 8300 8800
+$Comp
+L Device:R_Small R51
+U 1 1 5FFE8B18
+P 9750 8950
+F 0 "R51" H 9809 8996 50  0000 L CNN
+F 1 "100K" H 9809 8905 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 9750 8950 50  0001 C CNN
+F 3 "~" H 9750 8950 50  0001 C CNN
+	1    9750 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R50
+U 1 1 5FFEA888
+P 10200 8700
+F 0 "R50" V 10004 8700 50  0000 C CNN
+F 1 "1K" V 10095 8700 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 10200 8700 50  0001 C CNN
+F 3 "~" H 10200 8700 50  0001 C CNN
+	1    10200 8700
+	0    1    1    0   
+$EndComp
+Connection ~ 9000 8700
+Wire Wire Line
+	9750 8850 9750 8700
+Connection ~ 9750 8700
+Wire Wire Line
+	9750 8700 10100 8700
+$Comp
+L power:GND #PWR05
+U 1 1 6003625D
+P 9750 9200
+F 0 "#PWR05" H 9750 8950 50  0001 C CNN
+F 1 "GND" H 9755 9027 50  0000 C CNN
+F 2 "" H 9750 9200 50  0001 C CNN
+F 3 "" H 9750 9200 50  0001 C CNN
+	1    9750 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H6
+U 1 1 60050847
+P 10600 8700
+F 0 "H6" V 10554 8850 50  0001 L CNN
+F 1 "OUT" V 10600 8850 50  0000 L CNN
+F 2 "supply_pins:PAD1" H 10600 8700 50  0001 C CNN
+F 3 "~" H 10600 8700 50  0001 C CNN
+	1    10600 8700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10300 8700 10500 8700
+Wire Wire Line
+	9550 8700 9750 8700
+Wire Wire Line
+	9000 8700 9150 8700
+$Comp
+L Device:CP_Small C38
+U 1 1 5FFE68D1
+P 9450 8700
+F 0 "C38" V 9550 8700 50  0000 C CNN
+F 1 "2.2uF" V 9300 8700 50  0000 C CNN
+F 2 "caps-elec:0502" H 9450 8700 50  0001 C CNN
+F 3 "~" H 9450 8700 50  0001 C CNN
+	1    9450 8700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C31
+U 1 1 5FAB02AD
+P 11450 6150
+F 0 "C31" V 11679 6150 50  0000 C CNN
+F 1 "10nF" V 11588 6150 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 11450 6150 50  0001 C CNN
+F 3 "~" H 11450 6150 50  0001 C CNN
+	1    11450 6150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11350 6150 11250 6150
+Connection ~ 11250 6150
+Wire Wire Line
+	11250 6150 11250 6400
+Wire Wire Line
+	11550 6150 11750 6150
+Wire Wire Line
+	10700 5100 10450 5100
+Text GLabel 10450 5100 0    50   Input ~ 0
+SW_MIC_A_OFF_AXIS
+Wire Wire Line
+	10700 5100 10700 5400
+Connection ~ 10700 5400
+Wire Wire Line
+	14100 5400 14350 5400
+Wire Wire Line
+	14100 6500 14350 6500
+Wire Wire Line
+	14950 6500 14550 6500
+$Comp
+L Device:R_Small R39
+U 1 1 5FB870D8
+P 14450 6500
+F 0 "R39" V 14254 6500 50  0000 C CNN
+F 1 "8K2" V 14345 6500 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 14450 6500 50  0001 C CNN
+F 3 "~" H 14450 6500 50  0001 C CNN
+	1    14450 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14950 6150 14950 6500
+Connection ~ 14950 6150
+$Comp
+L Device:R_Small R4
+U 1 1 5FBBC8B9
+P 4250 1450
+F 0 "R4" V 4054 1450 50  0000 C CNN
+F 1 "22K" V 4145 1450 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 4250 1450 50  0001 C CNN
+F 3 "~" H 4250 1450 50  0001 C CNN
+	1    4250 1450
+	0    1    1    0   
+$EndComp
+Text GLabel 4600 1450 2    50   Input ~ 0
+SW_MOD_A_DRIVE
+Wire Wire Line
+	4350 1450 4600 1450
+Wire Wire Line
+	4150 1450 4050 1450
+Wire Wire Line
+	4050 1450 4050 1050
+Connection ~ 4050 1050
+Wire Wire Line
+	4050 1050 4150 1050
+Text GLabel 4600 2600 2    50   Input ~ 0
+SW_AMP_B_TWEED
+Wire Wire Line
+	4450 2350 4450 2600
+Wire Wire Line
+	4450 2600 4600 2600
+Connection ~ 4450 2350
+$Comp
+L Device:C_Small C24
+U 1 1 5FA3C87B
+P 3450 5650
+F 0 "C24" V 3221 5650 50  0000 C CNN
+F 1 "22nF" V 3312 5650 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 3450 5650 50  0001 C CNN
+F 3 "~" H 3450 5650 50  0001 C CNN
+	1    3450 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C25
+U 1 1 5FA3C881
+P 3850 5650
+F 0 "C25" V 3621 5650 50  0000 C CNN
+F 1 "10nF" V 3712 5650 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 3850 5650 50  0001 C CNN
+F 3 "~" H 3850 5650 50  0001 C CNN
+	1    3850 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C26
+U 1 1 5FA3C887
+P 4250 5650
+F 0 "C26" V 4021 5650 50  0000 C CNN
+F 1 "10nF" V 4112 5650 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 4250 5650 50  0001 C CNN
+F 3 "~" H 4250 5650 50  0001 C CNN
+	1    4250 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R28
+U 1 1 5FA3C88D
+P 3650 5250
+F 0 "R28" H 3709 5296 50  0000 L CNN
+F 1 "3K3" H 3709 5205 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 3650 5250 50  0001 C CNN
+F 3 "~" H 3650 5250 50  0001 C CNN
+	1    3650 5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 5050 1    50   Input ~ 0
+VB
+Wire Wire Line
+	3650 5050 3650 5150
+$Comp
+L Device:R_Small R29
+U 1 1 5FA3C895
+P 4050 5250
+F 0 "R29" H 4109 5296 50  0000 L CNN
+F 1 "22K" H 4109 5205 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 4050 5250 50  0001 C CNN
+F 3 "~" H 4050 5250 50  0001 C CNN
+	1    4050 5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 4050 5050 1    50   Input ~ 0
+VB
+Wire Wire Line
+	4050 5050 4050 5150
+$Comp
+L Device:R_Small R32
+U 1 1 5FA3C89D
+P 3850 6000
+F 0 "R32" V 3654 6000 50  0000 C CNN
+F 1 "75K" V 3745 6000 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 3850 6000 50  0001 C CNN
+F 3 "~" H 3850 6000 50  0001 C CNN
+	1    3850 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 5FA3C8A3
+P 4500 5250
+F 0 "C20" H 4592 5296 50  0000 L CNN
+F 1 "22nF" H 4592 5205 50  0000 L CNN
+F 2 "caps-film:0.2_22.SML" H 4500 5250 50  0001 C CNN
+F 3 "~" H 4500 5250 50  0001 C CNN
+	1    4500 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5650 3650 5650
+Wire Wire Line
+	3950 5650 4050 5650
+Wire Wire Line
+	3200 6000 3750 6000
+Wire Wire Line
+	3950 6000 4500 6000
+Wire Wire Line
+	4500 6000 4500 5650
+Wire Wire Line
+	4350 5650 4500 5650
+Connection ~ 4500 5650
+Wire Wire Line
+	4500 5650 4500 5350
+Wire Wire Line
+	4050 5350 4050 5650
+Connection ~ 4050 5650
+Wire Wire Line
+	4050 5650 4150 5650
+Wire Wire Line
+	3650 5350 3650 5650
+Connection ~ 3650 5650
+Wire Wire Line
+	3650 5650 3750 5650
+Text GLabel 4600 5000 2    50   Input ~ 0
+SW_AMP_A_AC
+Wire Wire Line
+	4500 5000 4500 5150
+Wire Wire Line
+	4500 5000 4600 5000
+Wire Wire Line
+	3350 5650 3200 5650
+Wire Wire Line
+	3200 5650 3200 6000
+Wire Wire Line
+	3200 4650 3200 5650
+Connection ~ 3200 4650
+Connection ~ 3200 5650
+Wire Wire Line
+	9750 9050 9750 9200
+Text GLabel 950  8450 0    50   Input ~ 0
+SW_AMP_A
+Text GLabel 950  8950 0    50   Input ~ 0
+SW_AMP_B
+Text GLabel 2000 8250 2    50   Input ~ 0
+SW_AMP_A_CALI
+Text GLabel 2000 8350 2    50   Input ~ 0
+SW_AMP_A_BRIT
+Text GLabel 2000 8450 2    50   Input ~ 0
+SW_AMP_A_AC
+Text GLabel 2000 8550 2    50   Input ~ 0
+SW_AMP_A_TWEED
+Text GLabel 2000 8850 2    50   Input ~ 0
+SW_AMP_B_BRIT
+Text GLabel 2000 8950 2    50   Input ~ 0
+SW_AMP_B_AC
+Text GLabel 2000 9050 2    50   Input ~ 0
+SW_AMP_B_TWEED
+Wire Wire Line
+	950  8450 1000 8450
+Wire Wire Line
+	950  8950 1000 8950
+Wire Wire Line
+	1900 8250 2000 8250
+Wire Wire Line
+	1900 8350 2000 8350
+Wire Wire Line
+	1900 8450 2000 8450
+Wire Wire Line
+	1900 8550 2000 8550
+Text GLabel 10450 5750 0    50   Input ~ 0
+SW_MIC_A_EDGE
+Text GLabel 10450 6150 0    50   Input ~ 0
+SW_MIC_A_CLASSIC
+Text GLabel 10450 5400 0    50   Input ~ 0
+SW_MIC_A_CENT
+Text GLabel 11750 5750 2    50   Input ~ 0
+SW_MIC_B_CENT
+Text GLabel 11750 6150 2    50   Input ~ 0
+SW_MIC_B_EDGE
+Text GLabel 14100 6150 0    50   Input ~ 0
+SW_MOD_B_CLEAN
+Text GLabel 14100 6500 0    50   Input ~ 0
+SW_MOD_B_DRIVE
+$Comp
+L Switch:SW_Rotary3x4 SW2
+U 1 1 5FF86827
+P 1400 8950
+F 0 "SW2" H 1450 9840 50  0000 C CNN
+F 1 "AMP" H 1450 9749 50  0000 C CNN
+F 2 "switches:2P4T.MINI_MODIF_KICAD" H 1300 9750 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf" H 1300 9750 50  0001 C CNN
+	1    1400 8950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1000 9450
+NoConn ~ 1900 9250
+NoConn ~ 1900 9350
+NoConn ~ 1900 9450
+NoConn ~ 1900 9550
+Wire Wire Line
+	1900 8750 2000 8750
+Wire Wire Line
+	1900 8850 2000 8850
+Wire Wire Line
+	1900 8950 2000 8950
+Wire Wire Line
+	1900 9050 2000 9050
+Text GLabel 3350 7950 0    50   Input ~ 0
+SW_MOD_A
+Text GLabel 3350 8450 0    50   Input ~ 0
+SW_MOD_B
+Text GLabel 4400 7750 2    50   Input ~ 0
+SW_MOD_A_HOT
+Text GLabel 4400 7850 2    50   Input ~ 0
+SW_MOD_A_HI
+Text GLabel 4400 7950 2    50   Input ~ 0
+SW_MOD_A_DRIVE
+Text GLabel 4400 8250 2    50   Input ~ 0
+SW_MOD_B_HOT
+Text GLabel 4400 8350 2    50   Input ~ 0
+SW_MOD_B_HI
+Text GLabel 4400 8450 2    50   Input ~ 0
+SW_MOD_B_DRIVE
+Text GLabel 4400 8550 2    50   Input ~ 0
+SW_MOD_B_CLEAN
+Wire Wire Line
+	3350 7950 3400 7950
+Wire Wire Line
+	3350 8450 3400 8450
+Wire Wire Line
+	4300 7750 4400 7750
+Wire Wire Line
+	4300 7850 4400 7850
+Wire Wire Line
+	4300 7950 4400 7950
+Wire Wire Line
+	4300 8050 4400 8050
+$Comp
+L Switch:SW_Rotary3x4 SW1
+U 1 1 600DABE7
+P 3800 8450
+F 0 "SW1" H 3850 9340 50  0000 C CNN
+F 1 "MOD" H 3850 9249 50  0000 C CNN
+F 2 "switches:2P4T.MINI_MODIF_KICAD" H 3700 9250 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf" H 3700 9250 50  0001 C CNN
+	1    3800 8450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3400 8950
+NoConn ~ 4300 8750
+NoConn ~ 4300 8850
+NoConn ~ 4300 8950
+NoConn ~ 4300 9050
+Wire Wire Line
+	4300 8250 4400 8250
+Wire Wire Line
+	4300 8350 4400 8350
+Wire Wire Line
+	4300 8450 4400 8450
+Wire Wire Line
+	4300 8550 4400 8550
+NoConn ~ 2000 8750
+NoConn ~ 4400 8050
+Text GLabel 3350 9800 0    50   Input ~ 0
+SW_MIC_A
+Text GLabel 3350 10300 0    50   Input ~ 0
+SW_MIC_B
+Text GLabel 4400 9600 2    50   Input ~ 0
+SW_MIC_A_EDGE
+Text GLabel 4400 9700 2    50   Input ~ 0
+SW_MIC_A_OFF_AXIS
+Text GLabel 4400 9800 2    50   Input ~ 0
+SW_MIC_A_CENT
+Text GLabel 4400 10100 2    50   Input ~ 0
+SW_MIC_B_EDGE
+Text GLabel 4400 10200 2    50   Input ~ 0
+SW_MIC_B_OFF_AXIS
+Text GLabel 4400 10300 2    50   Input ~ 0
+SW_MIC_B_CENT
+Text GLabel 4400 9900 2    50   Input ~ 0
+SW_MIC_A_CLASSIC
+Wire Wire Line
+	3350 9800 3400 9800
+Wire Wire Line
+	3350 10300 3400 10300
+Wire Wire Line
+	4300 9600 4400 9600
+Wire Wire Line
+	4300 9700 4400 9700
+Wire Wire Line
+	4300 9800 4400 9800
+$Comp
+L Switch:SW_Rotary3x4 SW3
+U 1 1 601C1D9B
+P 3800 10300
+F 0 "SW3" H 3850 11190 50  0000 C CNN
+F 1 "MIC" H 3850 11099 50  0000 C CNN
+F 2 "switches:2P4T.MINI_MODIF_KICAD" H 3700 11100 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf" H 3700 11100 50  0001 C CNN
+	1    3800 10300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3400 10800
+NoConn ~ 4300 10600
+NoConn ~ 4300 10700
+NoConn ~ 4300 10800
+NoConn ~ 4300 10900
+Wire Wire Line
+	4300 10100 4400 10100
+Wire Wire Line
+	4300 10200 4400 10200
+Wire Wire Line
+	4300 10300 4400 10300
+$Comp
+L Connector:AudioJack2 J2
+U 1 1 601EB792
+P 1200 10300
+F 0 "J2" H 1232 10625 50  0000 C CNN
+F 1 "INPUT" H 1232 10534 50  0000 C CNN
+F 2 "jacks:TS_SW" H 1200 10300 50  0001 C CNN
+F 3 "~" H 1200 10300 50  0001 C CNN
+	1    1200 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 601EEE32
+P 1550 10200
+F 0 "#PWR07" H 1550 9950 50  0001 C CNN
+F 1 "GND" V 1700 10150 50  0000 C CNN
+F 2 "" H 1550 10200 50  0001 C CNN
+F 3 "" H 1550 10200 50  0001 C CNN
+	1    1550 10200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1400 10200 1550 10200
+$Comp
+L Mechanical:MountingHole_Pad H11
+U 1 1 6023F5BC
+P 1550 10450
+F 0 "H11" V 1504 10600 50  0001 L CNN
+F 1 "IN_J" V 1550 10600 50  0000 L CNN
+F 2 "supply_pins:PAD1" H 1550 10450 50  0001 C CNN
+F 3 "~" H 1550 10450 50  0001 C CNN
+	1    1550 10450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 10300 1450 10300
+Wire Wire Line
+	1450 10300 1450 10450
+$Comp
+L Connector:AudioJack2 J3
+U 1 1 602BBFCC
+P 1200 10900
+F 0 "J3" H 1232 11225 50  0000 C CNN
+F 1 "OUTPUT" H 1232 11134 50  0000 C CNN
+F 2 "jacks:TS_SW" H 1200 10900 50  0001 C CNN
+F 3 "~" H 1200 10900 50  0001 C CNN
+	1    1200 10900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 602BBFD2
+P 1550 10800
+F 0 "#PWR08" H 1550 10550 50  0001 C CNN
+F 1 "GND" V 1700 10750 50  0000 C CNN
+F 2 "" H 1550 10800 50  0001 C CNN
+F 3 "" H 1550 10800 50  0001 C CNN
+	1    1550 10800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1400 10800 1550 10800
+$Comp
+L Mechanical:MountingHole_Pad H12
+U 1 1 602BBFD9
+P 1550 11050
+F 0 "H12" V 1504 11200 50  0001 L CNN
+F 1 "OUT_J" V 1550 11200 50  0000 L CNN
+F 2 "supply_pins:PAD1" H 1550 11050 50  0001 C CNN
+F 3 "~" H 1550 11050 50  0001 C CNN
+	1    1550 11050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 10900 1450 10900
+Wire Wire Line
+	1450 10900 1450 11050
+$Comp
+L Connector:Jack-DC J1
+U 1 1 602E75C0
+P 850 6850
+F 0 "J1" H 621 6808 50  0000 R CNN
+F 1 "Jack-DC" H 621 6899 50  0000 R CNN
+F 2 "jacks:DC_JACK" H 900 6810 50  0001 C CNN
+F 3 "~" H 900 6810 50  0001 C CNN
+	1    850  6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 6500 1150 6750
+Wire Wire Line
+	1150 7200 1150 6950
+Wire Wire Line
+	1850 4400 2150 4400
+$Comp
+L Diode:1N4148 D2
+U 1 1 6044A45A
+P 2150 4700
+F 0 "D2" V 2104 4780 50  0000 L CNN
+F 1 "1N4148" V 2195 4780 50  0000 L CNN
+F 2 "diodes:DO35-2" H 2150 4525 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2150 4700 50  0001 C CNN
+	1    2150 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 6044C071
+P 2150 4100
+F 0 "D1" V 2104 4180 50  0000 L CNN
+F 1 "1N4148" V 2195 4180 50  0000 L CNN
+F 2 "diodes:DO35-2" H 2150 3925 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2150 4100 50  0001 C CNN
+	1    2150 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 4250 2150 4400
+Connection ~ 2150 4400
+Wire Wire Line
+	2150 4400 2500 4400
+Wire Wire Line
+	2150 4550 2150 4400
+$Comp
+L power:GND #PWR02
+U 1 1 604CC941
+P 2150 4950
+F 0 "#PWR02" H 2150 4700 50  0001 C CNN
+F 1 "GND" H 2155 4777 50  0000 C CNN
+F 2 "" H 2150 4950 50  0001 C CNN
+F 3 "" H 2150 4950 50  0001 C CNN
+	1    2150 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4850 2150 4950
+Text GLabel 2150 3800 1    50   Input ~ 0
+9V
+Wire Wire Line
+	2150 3800 2150 3950
+$Comp
+L Diode:1N4148 D6
+U 1 1 60578C9F
+P 9150 9000
+F 0 "D6" V 9104 9080 50  0000 L CNN
+F 1 "1N4148" V 9195 9080 50  0000 L CNN
+F 2 "diodes:DO35-2" H 9150 8825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9150 9000 50  0001 C CNN
+	1    9150 9000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9150 8850 9150 8700
+$Comp
+L power:GND #PWR06
+U 1 1 60578CA6
+P 9150 9250
+F 0 "#PWR06" H 9150 9000 50  0001 C CNN
+F 1 "GND" H 9155 9077 50  0000 C CNN
+F 2 "" H 9150 9250 50  0001 C CNN
+F 3 "" H 9150 9250 50  0001 C CNN
+	1    9150 9250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 9150 9150 9250
+$Comp
+L Diode:1N4148 D5
+U 1 1 605A532F
+P 9150 8400
+F 0 "D5" V 9104 8480 50  0000 L CNN
+F 1 "1N4148" V 9195 8480 50  0000 L CNN
+F 2 "diodes:DO35-2" H 9150 8225 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9150 8400 50  0001 C CNN
+	1    9150 8400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9150 8550 9150 8700
+Text GLabel 9150 8100 1    50   Input ~ 0
+9V
+Wire Wire Line
+	9150 8100 9150 8250
+Connection ~ 9150 8700
+Wire Wire Line
+	9150 8700 9350 8700
+$Comp
+L Device:R_Small R34
+U 1 1 6060EB12
+P 1150 6100
+F 0 "R34" H 1209 6146 50  0000 L CNN
+F 1 "1K" H 1209 6055 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 1150 6100 50  0001 C CNN
+F 3 "~" H 1150 6100 50  0001 C CNN
+	1    1150 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_Small RV3
+U 1 1 60610A18
+P 1150 5800
+F 0 "RV3" H 1091 5846 50  0000 R CNN
+F 1 "BRIGHTNESS" H 1091 5755 50  0000 R CNN
+F 2 "potentiometers:TRIM1" H 1150 5800 50  0001 C CNN
+F 3 "~" H 1150 5800 50  0001 C CNN
+	1    1150 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 60612076
+P 1550 5650
+F 0 "D3" H 1543 5395 50  0000 C CNN
+F 1 "LED" H 1543 5486 50  0000 C CNN
+F 2 "diodes:3MM_IO" H 1550 5650 50  0001 C CNN
+F 3 "~" H 1550 5650 50  0001 C CNN
+	1    1550 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 6500 1150 6200
+Connection ~ 1150 6500
+Wire Wire Line
+	1150 5900 1150 6000
+Wire Wire Line
+	1150 5700 1150 5650
+Wire Wire Line
+	1150 5650 1300 5650
+Wire Wire Line
+	1250 5800 1300 5800
+Wire Wire Line
+	1300 5800 1300 5650
+Connection ~ 1300 5650
+Wire Wire Line
+	1300 5650 1400 5650
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6072370A
+P 1900 5650
+F 0 "H3" V 1854 5800 50  0001 L CNN
+F 1 "SW" V 1900 5800 50  0000 L CNN
+F 2 "supply_pins:PAD1" H 1900 5650 50  0001 C CNN
+F 3 "~" H 1900 5650 50  0001 C CNN
+	1    1900 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 5650 1800 5650
+Wire Wire Line
+	4300 9900 4400 9900
+NoConn ~ 4300 10400
+Wire Wire Line
+	2200 6500 2650 6500
+Wire Wire Line
+	2650 6550 2650 6500
+Connection ~ 2650 6500
+Wire Wire Line
+	2650 6500 2950 6500
+Wire Wire Line
+	3300 6500 3650 6500
+Wire Wire Line
+	3300 7200 3650 7200
+Wire Wire Line
+	3650 6550 3650 6500
+Connection ~ 3650 6500
+Wire Wire Line
+	3650 6500 4300 6500
+Wire Wire Line
+	3650 7150 3650 7200
+Connection ~ 3650 7200
+Wire Wire Line
+	3650 7200 4300 7200
+$Comp
+L Device:C_Small C41
+U 1 1 604AB90F
+P 6400 9350
+F 0 "C41" H 6308 9304 50  0000 R CNN
+F 1 "22nF" H 6308 9395 50  0000 R CNN
+F 2 "caps-film:0.2_22.SML" H 6400 9350 50  0001 C CNN
+F 3 "~" H 6400 9350 50  0001 C CNN
+	1    6400 9350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8050 8600 8300 8600
+$Comp
+L Device:C_Small C19
+U 1 1 5FC95F46
+P 5300 6550
+F 0 "C19" H 5392 6596 50  0000 L CNN
+F 1 "100nF" H 5392 6505 50  0000 L CNN
+F 2 "caps-film:0.2_22.SML" H 5300 6550 50  0001 C CNN
+F 3 "~" H 5300 6550 50  0001 C CNN
+	1    5300 6550
+	1    0    0    -1  
+$EndComp
+Text GLabel 6650 8700 0    50   Input ~ 0
+VB
+Wire Wire Line
+	6650 8700 6900 8700
+$Comp
+L Amplifier_Operational:TL064 U4
+U 3 1 5FD2D79D
+P 7200 8600
+F 0 "U4" H 7200 8233 50  0000 C CNN
+F 1 "TL064" H 7200 8324 50  0000 C CNN
+F 2 "integrated_circuits:DIP14.1" H 7150 8700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 7250 8800 50  0001 C CNN
+	3    7200 8600
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R46
+U 1 1 5FD6A266
+P 6050 7950
+F 0 "R46" H 6109 7996 50  0000 L CNN
+F 1 "3K3" H 6109 7905 50  0000 L CNN
+F 2 "resistors:0.3_22.B" H 6050 7950 50  0001 C CNN
+F 3 "~" H 6050 7950 50  0001 C CNN
+	1    6050 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 7650 5550 7650
+$Comp
+L Device:C_Small C34
+U 1 1 5FD67B22
+P 5650 7650
+F 0 "C34" V 5421 7650 50  0000 C CNN
+F 1 "10nF" V 5512 7650 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 5650 7650 50  0001 C CNN
+F 3 "~" H 5650 7650 50  0001 C CNN
+	1    5650 7650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 7650 5900 7650
+$Comp
+L Device:R_POT RV6
+U 1 1 5FD934F7
+P 6050 7650
+F 0 "RV6" V 5843 7650 50  0001 C CNN
+F 1 "TREBLE B100K" V 5935 7650 50  0000 C CNN
+F 2 "potentiometers:16MM_B.MOUNT" H 6050 7650 50  0001 C CNN
+F 3 "~" H 6050 7650 50  0001 C CNN
+	1    6050 7650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C40
+U 1 1 5FDA475A
+P 6500 7650
+F 0 "C40" V 6271 7650 50  0000 C CNN
+F 1 "10nF" V 6362 7650 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 6500 7650 50  0001 C CNN
+F 3 "~" H 6500 7650 50  0001 C CNN
+	1    6500 7650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R52
+U 1 1 5FDA5DF7
+P 6050 8900
+F 0 "R52" H 5900 8850 50  0000 C CNN
+F 1 "10K" H 5900 8950 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 6050 8900 50  0001 C CNN
+F 3 "~" H 6050 8900 50  0001 C CNN
+	1    6050 8900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R53
+U 1 1 5FD91E19
+P 5300 8900
+F 0 "R53" H 5150 8850 50  0000 C CNN
+F 1 "10K" H 5150 8950 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 5300 8900 50  0001 C CNN
+F 3 "~" H 5300 8900 50  0001 C CNN
+	1    5300 8900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C39
+U 1 1 5FD8FC1E
+P 6150 6700
+F 0 "C39" V 5921 6700 50  0000 C CNN
+F 1 "2.2nF" V 6012 6700 50  0000 C CNN
+F 2 "caps-film:0.2_22.SML" H 6150 6700 50  0001 C CNN
+F 3 "~" H 6150 6700 50  0001 C CNN
+	1    6150 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV5
+U 1 1 5FD66040
+P 6050 9750
+F 0 "RV5" V 5843 9750 50  0001 C CNN
+F 1 "BASS B100K" V 5935 9750 50  0000 C CNN
+F 2 "potentiometers:16MM_B.MOUNT" H 6050 9750 50  0001 C CNN
+F 3 "~" H 6050 9750 50  0001 C CNN
+	1    6050 9750
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7500 8600 7650 8600
+Wire Wire Line
+	6200 7650 6400 7650
+Wire Wire Line
+	6050 7800 6050 7850
+Wire Wire Line
+	6050 8050 6050 8500
+Wire Wire Line
+	6050 8500 6900 8500
+Connection ~ 6050 8500
+Wire Wire Line
+	6050 8500 6050 8800
+Wire Wire Line
+	6600 7650 7650 7650
+Wire Wire Line
+	7650 7650 7650 8600
+Connection ~ 7650 8600
+Wire Wire Line
+	7650 8600 7850 8600
+Wire Wire Line
+	7650 8600 7650 9200
+Wire Wire Line
+	6050 9000 6050 9100
+Wire Wire Line
+	6200 9750 6400 9750
+Wire Wire Line
+	7650 9750 7650 9400
+Wire Wire Line
+	6050 9100 6400 9100
+Wire Wire Line
+	6400 9100 6400 9250
+Connection ~ 6050 9100
+Wire Wire Line
+	6050 9100 6050 9600
+Wire Wire Line
+	6400 9450 6400 9750
+Connection ~ 6400 9750
+Wire Wire Line
+	6400 9750 7650 9750
+Wire Wire Line
+	5900 9750 5600 9750
+Wire Wire Line
+	5600 9750 5600 9450
+Wire Wire Line
+	5600 9250 5600 9100
+Wire Wire Line
+	5600 9100 6050 9100
+Wire Wire Line
+	5300 7650 5300 8800
+Connection ~ 5300 7650
+Wire Wire Line
+	5300 9000 5300 9750
+Wire Wire Line
+	5300 9750 5600 9750
+Connection ~ 5600 9750
+Text GLabel 6600 5400 1    50   Input ~ 0
+VB
+Wire Wire Line
+	6600 5400 6600 5600
+Wire Wire Line
+	6450 6150 6600 6150
+Wire Wire Line
+	6600 5800 6600 6150
+Connection ~ 6600 6150
+Wire Wire Line
+	6600 6150 6750 6150
+Wire Wire Line
+	6250 6150 6100 6150
+Wire Wire Line
+	5500 6250 5450 6250
+Wire Wire Line
+	5300 6250 5300 6450
+Wire Wire Line
+	5300 6650 5300 7650
+Wire Wire Line
+	6050 6700 5450 6700
+Wire Wire Line
+	5450 6700 5450 6250
+Connection ~ 5450 6250
+Wire Wire Line
+	5450 6250 5300 6250
+Wire Wire Line
+	6400 6350 6100 6350
+Wire Wire Line
+	6250 6700 6400 6700
+Wire Wire Line
+	6250 7050 6400 7050
+Wire Wire Line
+	6400 6350 6400 6700
+Connection ~ 6400 6700
+$Comp
+L power:GND #PWR0101
+U 1 1 610A4F1D
+P 7550 7300
+F 0 "#PWR0101" H 7550 7050 50  0001 C CNN
+F 1 "GND" H 7555 7127 50  0000 C CNN
+F 2 "" H 7550 7300 50  0001 C CNN
+F 3 "" H 7550 7300 50  0001 C CNN
+	1    7550 7300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 7300 7200 7300
+Wire Wire Line
+	7400 7300 7550 7300
+Wire Wire Line
+	5450 6700 5450 6900
+Connection ~ 5450 6700
+Wire Wire Line
+	5600 7050 6050 7050
+Wire Wire Line
+	6400 6700 6400 7050
+Wire Wire Line
+	5450 7300 5450 7200
+Wire Wire Line
+	5450 7300 6850 7300
+$EndSCHEMATC
